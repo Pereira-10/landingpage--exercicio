@@ -3,19 +3,19 @@
 .hero {
     padding: 4vw;
     min-width: 80vh;
-    background-image: url(../Imagens/chorao-banner-hero.png);
+    background-image: url(https://servidor-estaticos-pereira-10.vercel.app/chorao-banner-hero.png);
     background-size: cover;
     text-align: center;
     display: flex;
 
     @media (max-width: 768px) {
-        background-image: url(../Imagens/anuncio.png);
+        background-image: url(https://servidor-estaticos-pereira-10.vercel.app/anuncio.png);
         padding-top: calc(80vw + 70px);
         background-size: contain;
         background-repeat: no-repeat;
         margin-top: -55px;
     }
-    
+
 
         .watch-button {
             display: inline-block;
