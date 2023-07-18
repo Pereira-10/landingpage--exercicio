@@ -1,0 +1,87 @@
+@use 'variaveis';
+
+.hero {
+    padding: 4vw;
+    min-width: 80vh;
+    background-image: url(../Imagens/chorao-banner-hero.png);
+    background-size: cover;
+    text-align: center;
+    display: flex;
+
+    @media (max-width: 768px) {
+        background-image: url(../Imagens/anuncio.png);
+        padding-top: calc(80vw + 70px);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: -55px;
+    }
+
+        .watch-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 15px 15px;
+            background-color: variaveis.$corBotaoDark;
+            color: variaveis.$corTextoQuestion;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            text-transform: uppercase;
+            border-radius: 4px;
+            text-decoration: none;
+            letter-spacing: 1px;
+            border: 1px solid variaveis.$corBotao;
+
+        @media (max-width:768px) {
+            max-width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        &:hover {
+            background-color: variaveis.$corHover;
+            color: variaveis.$corTextoPrincipal;
+        }
+    }
+
+    &__content {
+        max-width: 640px;
+   
+        &__branding {
+            max-width: 100px; /* Reduzido o tamanho máximo do logo para 100 pixels */
+            margin: 0 auto 20px;
+
+            @media (max-width:768) {
+                max-width: 80px; /* Reduzido o tamanho máximo do logo para 80 pixels */
+            }
+        }
+
+        .title--small {
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-top: 20px;
+            }
+        }
+
+        &__combos {
+            display: flex;
+            justify-content: space-between;
+
+            @media (max-width:768px) {
+                display: block;
+            }
+
+            &__combo {
+                width: calc(50% - 12px);
+
+                @media (max-width:768px) {
+                    width: 100%;
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
+}
