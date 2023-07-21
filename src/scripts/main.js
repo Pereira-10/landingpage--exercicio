@@ -33,7 +33,6 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 })
 
-
 function ocultaElementosDoHeader() {
     const header = document.querySelector('header');
     header.classList.add('header--is-hidden');
