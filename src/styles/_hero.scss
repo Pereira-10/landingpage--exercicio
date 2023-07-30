@@ -9,11 +9,11 @@
     display: flex;
 
     @media (max-width: 768px) {
-        background-image: url(https://servidor-estaticos-pereira-10.vercel.app/anuncio.png);
-        padding-top: calc(80vw + 70px);
+        padding-top: calc(10vw + 50px);
         background-size: contain;
         background-repeat: no-repeat;
         margin-top: -55px;
+        color: variaveis.$corTextoQuestion;
     }
 
 
